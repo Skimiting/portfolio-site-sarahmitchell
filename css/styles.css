@@ -1,5 +1,3 @@
-/* General styling */
-
 /*
 Colors used:
 Primary Color (Off White): #f8f9fa;
@@ -57,6 +55,22 @@ h4 {
 }
 
 /*
+HEADER
+*/header {
+  background-color: #5F506B;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #212529;
+  box-shadow: 5px 5px 20px #212529;
+  position: relative;
+}
+
+main {
+  padding-top: 133px;
+}
+
+/*
 IMAGES
 */
 img {
@@ -64,30 +78,15 @@ img {
 }
 
 /*
-HEADER
-*/
-header {
-  background: color #5f506b;
-  padding: 10px 0;
-  margin: 10px;
-  border-bottom: 1px solid #212529;
-  width: 100%;
-  top: 0;
-}
-
-/*
-HERO
-*/
-#hero {
-  background-color: #5f506b;
-}
-
-/*
 LINKS
 */
 a {
-  color: #998888;
+  color: #ffffff;
   text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #998888;
 }
 
 a:hover {
@@ -95,17 +94,54 @@ a:hover {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
+a:active { /* selected link */
+  color: #998888;
+}
+
 a:focus {
   color: #998888;
   text-decoration: underline;
 }
 
-a:visited { /* visited link */
+main {
+  padding-top: 5px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f8f9fa;
+}
+
+nav > ul > li > a:visited {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #998888;
 }
 
-a:active { /* selected link */
-  color: #5F506B;
+nav > ul > li > a:hover {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #998888;
+}
+
+nav > ul > li > a:active {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #998888;
 }
 
 /*
@@ -113,30 +149,31 @@ BUTTONS
 */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #998888;
+  background-color: #5F506B;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #5F506B; /* width of the border, type, color */
+  border-bottom: 2px solid #998888; /* width of the border, type, color */
   transition: 0.2s opacity;
-}
-
-.button.active {
-  background-color: #998888;
-  color: #ffffff;
 }
 
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;  
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.button:active {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #998888;
+  color: #5F506B;
   text-transform: uppercase;
-  border: 2px solid #998888;
+  border: 2px solid #5F506B;
 }
 
 .button.contact:hover {
@@ -144,33 +181,24 @@ BUTTONS
   color: #ffffff;
 }
 
-a {/* element selector */
-  color: #5F506B;
-}
-
-#button {/* id selector */
-  color: white;
-}
-
-.button {/* class selector */
-  color: white;
-}
 
 /* Layout styling */
 
 .container {
   padding: 0 15px;
   max-width: 100%;
-  width: 1300px;
+  width: 1200px;
   margin: 0px auto;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
 }
 
 #work .row { 
-  padding-bottom: 30px; 
+  background-color: #f8f9fa;
+  color: #4a4a4a;
+  padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
@@ -186,30 +214,62 @@ a {/* element selector */
   text-align: center; /* Centers text */
 }
 
+.center {
+  text-align: center;
+}
+
+.header {
+  max-width: 250px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
 #hero {
-  background-color: #5f506b;
+  background-color: #5F506B;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#work {
+  background-color: #f8f9fa;
+  color: #4a4a4a;
+}
+
+#about {
+  background-color: #f8f9fa;
+  color: #4a4a4a;
+}
+
+#casestudy {
+  background-color: #f8f9fa;
+  color: #4a4a4a;
+}
+
+#contact {
+  background-color: #f8f9fa;
+  color: #4a4a4a;
+}
+
+.social {
+  color: #212529;
   display: inline-block;
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
-main {
-  padding-top: 133px;
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #f8f9fa;
+#float-boxes div {
+  text-align: center;
+  padding: 25px;
+  margin: 10px;
+  float: both;
 }

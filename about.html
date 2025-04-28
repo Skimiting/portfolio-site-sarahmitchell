@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Sarah Mitchell</title>
+        <meta name="author" content="Sarah Mitchell">
+        <meta name="description" content="Sarah Mitchell UI Design Portfolio site">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="author" content="Sarah Mitchell">
-        <meta name="description" content="Sarah Mitchell UI Design Portfolio site">
-        <title>About Sarah Mitchell</title>
     </head>
+
     <body>
         <!-- For the header -->
         <header id="header">
             <!-- For the navigation -->
             <div>
+                <div id="navigation">
+                <div class="container">
                <a href="index.html" target="_self"><h1>Sarah Mitchell</h1></a>
+               <div class="menu"></div>
                 <nav>
+                    <ul class="navigation"></ul>
                     <ul type="square">
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
@@ -25,16 +31,18 @@
                 </nav>
             </div>
         </header>
+
         <main>
-            <div>
-                <div>
+            <div id="about">
+                <div class="container">
                     <h1>About Me</h1>
+                    <div>
+                        <picture>
+                            <source srcset="./img/about/sarah_profile_pic_600px" media="(max-width:767px)">
+                            <img src="./img/about/sarah_profile_pic_1200px.jpeg" alt="my profile image">
+                        </picture>
                 </div>
-                <div>
-                    <picture>
-                        <source srcset="./img/about/sarah_profile_pic_600px" media="(max-width:767px)">
-                        <img src="./img/about/sarah_profile_pic_1200px.jpeg" alt="my profile image">
-                    </picture>
+               
                     <div>
                         <div>
                             <h2>My Story</h2>
@@ -76,13 +84,16 @@
     
     <footer id="contact">
         <div>
+            <div id="contact">
+                <div class="container">
             <h2>Get in touch</h2>
             <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+            <div class="row"> <a href="mailto: skimiting@gmail.com" class="button contact">SEND ME AN EMAIL</a>
         </div>
         <div>
             <a href="mailto: skimiting@gmail.com">send email</a>
         </div>
-        <div>
+        <div class="social" id="float-boxes">
             <a href="https://www.behance.net/skimiting" target="_blank"><picture>
                 <img src="img/graphics/7693310_behance_social media_logo_icon.svg" alt="">
             </picture></a>
@@ -93,8 +104,11 @@
                 <img src="img/graphics/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="">
             </picture></a>
         </div>
-        <div>
+        </div>
+        <div class="copyright">
+            <div class="container">
             <p>Copyright @Sarah Mitchell 2025</p>
+        </div>
         </div>
     </footer>
 </body></html>
