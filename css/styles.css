@@ -147,6 +147,7 @@ nav > ul > li > a:active {
 /*
 BUTTONS
 */
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #5F506B;
@@ -276,63 +277,4 @@ BUTTONS
 }
 
 .social {
-  color: #212529;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-#float-boxes div {
-  text-align: center;
-  padding: 25px;
-  margin: 10px;
-  float: both;
-}
-
-/* Media Queries */
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  .col-md-6 {
-  width: 50%;
-}
-
-#about h3 { margin-top: 0;}
-
-}
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {
-}
+  color: 
