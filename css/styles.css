@@ -153,6 +153,7 @@ BUTTONS
   border-radius: 3px;
   border-bottom: 2px solid #998888; /* width of the border, type, color */
   transition: 0.2s opacity;
+  max-height: 50px;
 }
 
 .button:hover {
@@ -324,6 +325,20 @@ height: auto;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
+.design-flex {
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.column-flex {
+ margin: 10px 0;
+ width: 100%;
+}
+
 /* Media Queries */
 
 /* ==============================
@@ -351,6 +366,16 @@ Medium devices (640px and larger)
 
 #about h3 { margin-top: 0;}
 
+.design-flex {
+
+  flex-direction: row;
+    margin-bottom: 0px;
+
+}
+
+.column-flex {
+  width: 48%;
+}
 }
 
 /* ==============================
